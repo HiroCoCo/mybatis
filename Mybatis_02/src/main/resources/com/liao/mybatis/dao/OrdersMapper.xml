@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.liao.mybatis.dao.OrdersMapper">
+    <!--自定义resultMap-->
+    <resultMap id="getOrderList" type="orders">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+    </resultMap>
+
+    <select id="findOrdersList" resultMap="getOrderList">
+        SELECT * FROM orders
+    </select>
+</mapper>

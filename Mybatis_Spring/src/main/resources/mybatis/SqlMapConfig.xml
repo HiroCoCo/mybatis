@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!-- 自定义别名 -->
+    <typeAliases>
+        <!-- type
+            指定是java对象的全限定名称
+            指定的是别名
+        -->
+        <!-- <typeAlias type="com.itheima.mybatis.po.User" alias="user"/> -->
+        <!-- name 指定 要扫描的包名，默认设置一个自定义别名：就是类的名称(大小写不敏感) -->
+        <package name="com.liao.mybatis.pojo"/>
+    </typeAliases>
+
+</configuration>
